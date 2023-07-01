@@ -1,0 +1,221 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+/* Importar aquí la font */
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500&family=Lato:wght@300;400;700&family=Merriweather:wght@700&family=Poppins:wght@500;700&family=Simonetta&display=swap");
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif, "Poppins";
+  font-size: 20px;
+  line-height: 1.2;
+  scroll-behavior: smooth;
+}
+/* Para quitar los puntos a los items de listas */
+ul {
+  list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+body
+{
+  position: relative;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 2px 2px rgb(228, 228, 228);
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fbfbfb;
+  z-index: 600;
+}
+
+
+main {
+ position: relative;
+  min-width: 266px;
+  max-width: 1024px;
+  text-align: center;
+  margin: 20px auto;
+  min-height: 100vh;
+  top: 120px;
+}
+
+
+
+.logo-eidos {
+  transition: 0.6s;
+}
+
+.titilo1 {
+  font-size: 36px;
+}
+.titulo2 {
+  font-size: 28px;
+}
+
+
+header nav ul
+ {
+  display: flex;
+  
+  
+ 
+}
+
+header nav ul li a
+{
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+/* modificar con javascript add class */
+header ul .activo
+ {
+  color: #af599e; 
+  transition: all 0.6s;
+  box-shadow: 2px 2px 10px 5px #af599e;
+  
+}
+
+
+
+
+
+
+.parte1
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  & .parte1-article
+  {
+   max-width: 500px;
+   & p
+   {
+    text-align: justify;
+    padding: 10px;
+   }
+  }
+
+}
+.parte1 img 
+{
+  border-radius: 50%;
+  max-width: 266px;
+  min-width: 200px;
+}
+
+.parte1-article-BotonCV {
+  background-color: #af599e;
+  border-radius: 15px;
+  padding: 10px;
+  color: #fbfbfb;
+  transition: 0.6s;
+  font-size: 20px;
+}
+.parte1-article-BotonCV:hover {
+  box-shadow: 1px 5px 10px 3px #af599e;
+  transition: 0.6s;
+  color: rgb(32, 32, 32);
+}
+.parte1-article p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.parte2
+{
+
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ align-items: center;
+}
+.parte2-hablemos {
+  background-color: rgba(175, 89, 158, 0.3);
+  margin-top: 100px;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  justify-self: center;
+  margin-bottom: 50px;
+  
+ 
+}
+
+.parte2-hablemos p {
+  color: #0f0f0f;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.parte2-RSS {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.parte2-RSS li a img
+ {
+  max-width: 80px;
+  min-width: auto;
+  transition: 0.6s;
+  
+  
+  
+}
+
+.parte2-RSS li a img:hover {
+ transform: scale(1.5);
+}
+
+.pie-de-pagina {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #af599e;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fbfbfb;
+  font-size: 20px;
+  width: 100%;
+}
+
+
+/* cambiar con media querys */
+@media  (max-whidth: 1024px)
+{
+  .parte1
+  {
+    flex-direction: column;
+    
+  }
+  
+}
